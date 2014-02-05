@@ -1,0 +1,64 @@
+{
+  "largeScreenMinWidth" : 768,
+  "largeScreenHeaderHeight" : 80,
+  "largeScreenFooterHeight" : 30,
+  "pageWidth" : 611,
+  "pageHeight" : 819,
+  "animateSmallScreen" : true,
+  "animateLargeScreen" : false,
+  "animationSpeed" : 300,
+  "pages" : [
+    "pages/Strip01.jpg",
+    "pages/Strip02.jpg",
+    "pages/Strip03.jpg",
+    "pages/Strip04.jpg",
+    "pages/Strip05.jpg",
+    "pages/Strip06.jpg",
+    "pages/Strip07.jpg",
+    "pages/Strip08.jpg",
+    "pages/Strip09.jpg",
+    "pages/Strip10.jpg",
+    "pages/Strip11.jpg",
+    "pages/Strip12.jpg",
+    "pages/Strip13.jpg",
+    "pages/Strip14.jpg",
+    "pages/Strip15.jpg",
+    "pages/Strip16.jpg",
+    "pages/Strip17.jpg",
+    "pages/Strip18.jpg",
+    "pages/Strip19.jpg",
+    "pages/Strip20.jpg"
+  ],
+  "chapters" : [
+    {
+      "title" : "Start",
+      "subtitle" : "A wonderful start.",
+      "image" : "chapters/Chapter01.jpg",
+      "pageNumber" : 1
+    },
+    {
+      "title" : "Chapter 2",
+      "subtitle" : "Escaping the evil monster.",
+      "image" : "chapters/Chapter02.jpg",
+      "pageNumber" : 4
+    },
+    {
+      "title" : "Chapter 3",
+      "subtitle" : "Ravi showing up for the first time.",
+      "image" : "chapters/Chapter03.jpg",
+      "pageNumber" : 10
+    },
+    {
+      "title" : "Chapter 4",
+      "subtitle" : "Going back to the palace.",
+      "image" : "chapters/Chapter04.jpg",
+      "pageNumber" : 14
+    },
+    {
+      "title" : "End",
+      "subtitle" : "Drinking tee with Ravi.",
+      "image" : "chapters/Chapter05.jpg",
+      "pageNumber" : 16
+    }
+  ]
+}

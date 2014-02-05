@@ -1,0 +1,305 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+.fullscreen-toggle-enter,
+.fullscreen-toggle-exit {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 1020;
+}
+.small-screen .fullscreen-toggle-enter,
+.small-screen .fullscreen-toggle-exit,
+.show-chapters .fullscreen-toggle-enter,
+.show-chapters .fullscreen-toggle-exit {
+  display: none;
+}
+.show-navigation .fullscreen-toggle-exit {
+  display: none;
+}
+.hide-navigation .fullscreen-toggle-enter {
+  display: none;
+}
+.header-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+.header-nav:before,
+.header-nav:after {
+  display: table;
+  content: " ";
+}
+.header-nav li {
+  float: left;
+  position: relative;
+  display: block;
+  width: 25%;
+  height: 20px;
+}
+.first-page .header-nav-previous,
+.last-page .header-nav-next {
+  color: #999999;
+  cursor: default;
+}
+.small-screen .header,
+.small-screen .footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1010;
+  background-color: #fafafa;
+  -webkit-transition: top 300ms, bottom 300ms;
+  transition: top 300ms, bottom 300ms;
+}
+.small-screen .header {
+  border-bottom: 1px solid #e5e5e5;
+  top: 0;
+}
+.small-screen .footer {
+  border-top: 1px solid #e5e5e5;
+  bottom: 0;
+}
+.small-screen.hide-navigation .header {
+  top: -50px;
+}
+.small-screen.hide-navigation .footer {
+  bottom: -50px;
+}
+.small-screen .header-brand {
+  display: none;
+}
+.small-screen a.header-nav-home-small {
+  font-family: "UnifrakturMaguntia", "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ff5992;
+  font-size: 2em;
+}
+.small-screen a.header-nav-home-large {
+  display: none;
+}
+.large-screen .header,
+.large-screen .footer {
+  text-align: center;
+  margin: 0 auto;
+}
+.large-screen .header {
+  height: 80px;
+}
+.large-screen .footer {
+  height: 30px;
+  line-height: 30px;
+}
+.large-screen.hide-navigation .header {
+  display: none;
+}
+.large-screen .header-brand a {
+  font-family: "UnifrakturMaguntia", "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ff5992;
+  font-size: 3em;
+  white-space: nowrap;
+}
+.large-screen .header-nav-home,
+.large-screen .header-nav-next {
+  text-align: left;
+}
+.large-screen .header-nav-previous,
+.large-screen .header-nav-chapters {
+  text-align: right;
+}
+.large-screen .header-nav {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.large-screen .header-nav li {
+  padding: 0 15px;
+}
+.large-screen .header-nav-home-small {
+  display: none;
+}
+a.header-nav-chapters-hide {
+  display: none;
+}
+.show-chapters a.header-nav-chapters-show,
+.show-chapters a.header-nav-previous,
+.show-chapters a.header-nav-next {
+  display: none;
+}
+.show-chapters a.header-nav-chapters-hide {
+  display: inline;
+}
+#page-container {
+  position: relative;
+  overflow: hidden;
+  /* height: is set in JavaScript. */
+}
+.page-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  /* Removes spacing between inline-blocks. */
+  left: 0px;
+  margin-left: 0px;
+}
+.page {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 910;
+}
+.spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.4rem;
+  /* reset to 14px */
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  z-index: 900;
+}
+.navpanel-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  /* width: is set in JavaScript */
+}
+.small-screen .navpanel-container {
+  display: none;
+}
+.navpanel-previous-container {
+  left: 0;
+  text-align: right;
+}
+.navpanel-next-container {
+  right: 0;
+}
+.first-page .navpanel-previous,
+.last-page .navpanel-next {
+  cursor: default;
+}
+.first-page .navpanel-previous a,
+.last-page .navpanel-next a {
+  cursor: default;
+  color: #999999;
+}
+.navpanel {
+  display: table;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.navpanel a {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3em;
+}
+.chapter-overview {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+.show-chapters .chapter-overview {
+  display: block;
+}
+.small-screen .chapter-overview {
+  padding-top: 50px;
+}
+.chapter-overview .chapter-image {
+  text-align: left;
+}
+.chapter-overview .chapter-description {
+  text-align: left;
+  width: 100%;
+}
+.chapter-overview table tr {
+  cursor: pointer;
+}
+body.show-chapters {
+  overflow: auto;
+}
+.show-chapters #page-container,
+.show-chapters .footer {
+  display: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #333333;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #666666;
+  outline: none;
+}
+a.disabled,
+a.disabled:hover,
+a.disabled:focus {
+  color: #999999;
+}
+#root-container {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  /* max-width: is set in JavaScript. */
+  /* height: is set in JavaScript. */
+}
+.fouc #root-container {
+  display: none;
+}
+.fouc-loader {
+  display: none;
+  margin-top: 30px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.fouc .fouc-loader {
+  display: block;
+}

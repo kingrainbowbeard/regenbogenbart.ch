@@ -1,0 +1,280 @@
+body {
+  font-family: Penciltools, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 18px; 
+}
+
+/* Book: #ff5892 */
+/* Book-hover: #ff23a2 */
+/* Blog: #777777 */
+/* Blog-hover: #656565 */
+
+.bubble-container {
+  position: relative;
+  height: 210px;
+}
+
+/* The book bubble. */
+.book-link {
+  margin: auto;
+  position: absolute;
+  top: 0; 
+  left: -70px; 
+  bottom: 0;
+  right: 0;
+  width: 158px;
+  height: 110px;
+  line-height: 110px;
+  font-size: 58px;
+  color: #fff;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.book-link:hover {
+  width: 168px;
+  height: 118px;
+  line-height: 118px;
+}
+
+.book-link:hover,
+.book-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.book-bubble {
+  display: block;
+  border-radius: 100%;
+  background-color: #ff5892;
+}
+
+.book-bubble:after {
+  border-color: transparent #ff5892;
+}
+
+a:hover .book-bubble {
+  background-color: #ff23a2;
+}
+
+a:hover .book-bubble:after {
+  border-color: transparent #ff23a2;
+}
+
+
+/* The blog bubble. */
+.blog-link {
+  margin: auto;
+  position: absolute;
+  top: 40px; 
+  left: 148px;
+  bottom: 0; 
+  right: 0;
+  width: 80px;
+  height: 56px;
+  line-height: 56px;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.blog-link:hover {
+  width: 90px;
+  height: 62px;
+  line-height: 62px;
+  z-index: 2;
+}
+
+.blog-link:hover,
+.blog-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-bubble {
+  display: block;
+  border-radius: 100%;
+  background-color: #777777;
+}
+
+.blog-bubble:after {
+  border-color: transparent #777777;
+}
+
+a:hover .blog-bubble {
+  background-color: #656565;
+  color: #fff;
+  text-decoration: none;
+  width: 90px;
+  height: 62px;
+  line-height: 62px;
+}
+
+a:hover .blog-bubble:after {
+  border-color: transparent #656565;
+}
+
+
+/* Bubble tails. */
+.bubble-tail-top-left:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: -11%;
+  left: 25%;
+  border-top-width: 30px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 34px;
+  border-style: solid;
+  /* border-color: transparent #ff5892; */
+  width: 0;
+}
+
+.bubble-tail-top-left:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -11%;
+  left: 25%;
+  border-top-width: 30px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 5px;
+  border-style: solid;
+  border-color: transparent #ffffff;
+  width: 0;
+}
+
+.bubble-tail-top-right:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: -11%;
+  right: 25%;
+  border-top-width: 30px;
+  border-right-width: 34px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-style: solid;
+  /* border-color: transparent #ff5892; */
+  width: 0;
+}
+
+.bubble-tail-top-right:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -11%;
+  right: 25%;
+  border-top-width: 30px;
+  border-right-width: 5px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: transparent #ffffff;
+  width: 0;
+}
+
+/* Arrows */
+.book-arrow {
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: -300px;
+  width: 30px;
+  height: 64px;
+}
+
+.book-arrow img {
+  padding-left: 20px;
+  display: block;
+}
+
+.blog-arrow {
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 230px;
+  width: 30px;
+  height: 51px;
+}
+
+.blog-arrow img {
+  display: block;
+}
+
+/* Dear Friends, ... */
+.dear-friends {
+  margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .dear-friends {
+    margin-top: 30px;
+  }
+}
+
+/* ...keep you updated */
+.keep-updated {
+  margin-top: 30px;
+}
+
+.keep-updated img {
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+/*
+ * Subscription form 
+ */
+.subscribe-form {
+  margin-top: 40px;
+}
+
+.subscribe-email-col {
+  margin-bottom: 15px;
+  padding-right: 0.2em;
+}
+
+.subscribe-button-col {
+  padding-left: 0.2em;
+}
+
+.subscribe-email {
+  border-color: #ff5892;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.subscribe-email:focus {
+  border-color: #ff23a2;rgb(255, 35, 162)
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 88, 146, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 88, 146, 0.6);
+}
+
+.subscribe-button {
+  color: #ffffff;
+  background-color: #ff5892;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  line-height: 1.33;
+  font-size: 18px;
+  width: 100%;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus,
+.subscribe-button:active {
+  color: #ffffff;
+  background-color: #ff23a2;
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
