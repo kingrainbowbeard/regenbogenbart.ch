@@ -35,6 +35,7 @@ body {
   width: 168px;
   height: 118px;
   line-height: 118px;
+  font-size: 62px;
 }
 
 .book-link:hover,
@@ -82,6 +83,7 @@ a:hover .book-bubble:after {
   width: 90px;
   height: 62px;
   line-height: 62px;
+  font-size: 31px;
   z-index: 2;
 }
 
@@ -177,14 +179,15 @@ a:hover .blog-bubble:after {
   position: absolute;
   right: 0;
   bottom: 0px;
-  left: -300px;
-  width: 30px;
+  left: -270px;
+  width: 200px;
   height: 64px;
 }
 
 .book-arrow img {
   padding-left: 20px;
   display: block;
+  margin: auto;
 }
 
 .blog-arrow {
@@ -193,12 +196,13 @@ a:hover .blog-bubble:after {
   right: 0;
   bottom: 0px;
   left: 230px;
-  width: 30px;
+  width: 200px;
   height: 51px;
 }
 
 .blog-arrow img {
   display: block;
+  margin: auto;
 }
 
 /* Dear Friends, ... */
@@ -271,5 +275,8 @@ a:hover .blog-bubble:after {
 /* Footer */
 .footer {
   margin-top: 100px;
-  margin-bottom: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
 }
