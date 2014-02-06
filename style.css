@@ -103,11 +103,6 @@ a:hover .book-bubble:after {
 
 a:hover .blog-bubble {
   background-color: #656565;
-  color: #fff;
-  text-decoration: none;
-  width: 90px;
-  height: 62px;
-  line-height: 62px;
 }
 
 a:hover .blog-bubble:after {
