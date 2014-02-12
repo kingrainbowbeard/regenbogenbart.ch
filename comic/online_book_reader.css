@@ -129,43 +129,29 @@ a.header-nav-chapters-hide {
 .show-chapters a.header-nav-chapters-hide {
   display: inline;
 }
-#page-container {
+#swiper {
   position: relative;
   overflow: hidden;
   /* height: is set in JavaScript. */
 }
-.page-wrapper {
+.page-container {
   position: relative;
   height: 100%;
   width: 100%;
-  white-space: nowrap;
-  font-size: 0;
-  /* Removes spacing between inline-blocks. */
-  left: 0px;
-  margin-left: 0px;
+  /* The pages. */
 }
-.page {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
+.page-container > div {
+  position: absolute;
   height: 100%;
   width: 100%;
   text-align: center;
 }
-.page img {
-  position: relative;
+.page-container > div img {
   max-width: 100%;
   max-height: 100%;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
   z-index: 910;
 }
 .spinner {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -176,6 +162,9 @@ a.header-nav-chapters-hide {
   margin-top: -1em;
   margin-left: -1em;
   z-index: 900;
+}
+.loaded .spinner {
+  display: none;
 }
 .navpanel-container {
   position: absolute;
@@ -219,6 +208,7 @@ a.header-nav-chapters-hide {
   margin: 0 auto;
   text-align: center;
   display: none;
+  padding-bottom: 50px;
 }
 .show-chapters .chapter-overview {
   display: block;
@@ -239,7 +229,7 @@ a.header-nav-chapters-hide {
 body.show-chapters {
   overflow: auto;
 }
-.show-chapters #page-container,
+.show-chapters #swiper,
 .show-chapters .footer {
   display: none;
 }
@@ -249,7 +239,7 @@ body {
 }
 body {
   font-family: "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;

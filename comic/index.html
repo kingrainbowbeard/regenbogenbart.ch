@@ -61,8 +61,48 @@
         </ul>
       </div>
       
-      <div id="page-container">
-        <div class="page-wrapper">
+      <div id="swiper">
+        <div class="page-container">
+          <!-- *************************** -->
+          <!-- ** Add all pages here    ** -->
+          <!-- *************************** -->
+        
+          <!-- The front cover. --> 
+          <div data-type="front" data-img="pages/Cover.jpg"></div>
+          
+          <!-- The intro pages. --> 
+          <div data-type="intro" data-img="pages/Intro01.jpg"></div>
+          <div data-type="intro" data-img="pages/Intro02.jpg"></div>
+        
+          <!-- The book pages. --> 
+          <div data-type="page" data-img="pages/Strip01.jpg"></div>
+          <div data-type="page" data-img="pages/Strip02.jpg"></div>
+          <div data-type="page" data-img="pages/Strip03.jpg"></div>
+          <div data-type="page" data-img="pages/Strip04.jpg"></div>
+          <div data-type="page" data-img="pages/Strip05.jpg"></div>
+          <div data-type="page" data-img="pages/Strip06.jpg"></div>
+          <div data-type="page" data-img="pages/Strip07.jpg"></div>
+          <div data-type="page" data-img="pages/Strip08.jpg"></div>
+          <div data-type="page" data-img="pages/Strip09.jpg"></div>
+          <div data-type="page" data-img="pages/Strip10.jpg"></div>
+          <div data-type="page" data-img="pages/Strip11.jpg"></div>
+          <div data-type="page" data-img="pages/Strip12.jpg"></div>
+          <div data-type="page" data-img="pages/Strip13.jpg"></div>
+          <div data-type="page" data-img="pages/Strip14.jpg"></div>
+          <div data-type="page" data-img="pages/Strip15.jpg"></div>
+          <div data-type="page" data-img="pages/Strip16.jpg"></div>
+          <div data-type="page" data-img="pages/Strip17.jpg"></div>
+          <div data-type="page" data-img="pages/Strip18.jpg"></div>
+          <div data-type="page" data-img="pages/Strip19.jpg"></div>
+          <div data-type="page" data-img="pages/Strip20.jpg"></div>
+          <div data-type="page" data-img="pages/Strip21.jpg"></div>
+          <div data-type="page" data-img="pages/Strip22.jpg"></div>
+          
+          <!-- The end pages. --> 
+          <div data-type="end">
+            <p>Dies ist das vorläufige Ende...</p>
+          </div>
+          
         </div>
         
         <div class="navpanel-container navpanel-previous-container">
@@ -84,14 +124,40 @@
         <h1>Kapitel</h1>
         <table class="table table-hover">
           <tbody>
+            <!-- *************************** -->
+            <!-- ** Add all chapters here ** -->
+            <!-- *************************** -->
+            
+            <tr data-title="Start" 
+                data-summary="A wonderful start."
+                data-img="chapters/Chapter01.jpg"
+                data-url="page/1"></tr>
+            
+            <tr data-title="Chapter 2" 
+                data-summary="Escaping the evil monster."
+                data-img="chapters/Chapter02.jpg"
+                data-url="page/4"></tr>
+            
+            <tr data-title="Chapter 3" 
+                data-summary="Ravi showing up for the first time."
+                data-img="chapters/Chapter03.jpg"
+                data-url="page/10"></tr>
+            
+            <tr data-title="Chapter 4" 
+                data-summary="Going back to the palace."
+                data-img="chapters/Chapter04.jpg"
+                data-url="page/14"></tr>
+            
+            <tr data-title="End" 
+                data-summary="Drinking tee with Ravi."
+                data-img="chapters/Chapter05.jpg"
+                data-url="page/16"></tr>
           </tbody>
         </table>
       </div>
     </div>
 
     <script type="application/dart" src="online_book_reader.dart"></script>
-    <script src="packages/browser/interop.js"></script>
     <script src="packages/browser/dart.js"></script>
-    <script src="../assets/js/flipsnap.js"></script>
   </body>
 </html>
