@@ -5850,7 +5850,8 @@ ML:function(a){return this.Ui(null,a)},
 j9:function(){var z=this.i6
 z.sV1(new B.EK(0,[],z))},
 Uk:function(){var z=this.i6
-z.sV1(B.yp(z))}},
+z.sV1(B.yp(z))},
+ci:function(){return!1}},
 lK:{
 "":"Tp:14;a",
 call$1:function(a){$.hL().x9("onLocationHash event: "+B.YH())
@@ -5938,12 +5939,15 @@ v.E8(y.JI).aN(0,y.gja())
 y.JI.E8(v).aN(0,y.gqT())
 y.JI=v
 y=$.Ua
-x=x.wU.Jd
-z=this.bV
-if(z>>>0!==z||z>=x.length)return H.e(x,z)
-y.textContent=x[z].u0
-if($.n2==null)this.Rw(z)
-else this.P3(z,a)},
+z=x.wU.Jd
+w=this.bV
+if(w>>>0!==w||w>=z.length)return H.e(z,w)
+y.textContent=z[w].u0
+x.J0.SI()
+z=$.n2
+y=this.bV
+if(z==null)this.Rw(y)
+else this.P3(y,a)},
 r0:function(){return this.Ui(null,0)},
 ML:function(a){return this.Ui(null,a)},
 Uk:function(){var z,y
@@ -5987,6 +5991,11 @@ z.c=0
 z.d=0
 z.e=null
 z.e=P.eW(P.k5(0,0,0,16,0,0),null,null).yI(new B.bV(z,this,y,0,x))},
+ci:function(){var z,y
+z=this.i6.wU.Jd
+y=this.bV
+if(y>>>0!==y||y>=z.length)return H.e(z,y)
+return z[y].KL},
 $isf0:true,
 static:{"":"n2,RH"}},
 ki:{
@@ -6059,6 +6068,7 @@ Uk:function(){var z,y
 z=this.i6
 y=B.yp(z)
 if(!y.$isEK)z.sV1(y)},
+ci:function(){return!0},
 $isEK:true,
 static:{"":"zJ"}},
 I9:{
@@ -6087,7 +6097,7 @@ Hn:function(){var z,y
 z=this.i6
 y=B.PM(z)
 if(!y.$isQH)z.sK8(y)},
-SI:function(){var z,y,x,w,v,u
+SI:function(){var z,y,x,w,v,u,t
 $.hL().qB("SmallScreenState: updateLayout")
 z=window.innerWidth
 y=window.innerHeight
@@ -6096,19 +6106,20 @@ if(typeof z!=="number")return H.s(z)
 this.zf=y>z
 J.EB($.LG.style,"100%")
 J.EB($.Ua.style,"100%")
-x=this.i6.Y1
-w=J.x(x)
-if(typeof x==="object"&&x!==null&&!!w.$isEK)J.uP($.eC.style,"auto")
-else{x=$.CF
-v=x.guc()
-u=x.Lt
-if(J.xZ(v,z)){if(typeof v!=="number")return H.s(v)
-u=J.LL(J.p0(u,z/v))}if(J.xZ(u,y)){x=this.zf
-w=$.eC
-if(x){J.uP(w.style,"0")
-u=y}else J.uP(w.style,"auto")}else J.uP($.eC.style,"0")
-J.OE($.eC.style,H.d(u)+"px")
-J.OE($.wu.style,H.d(u)+"px")}},
+x=this.i6
+w=x.Y1
+v=J.x(w)
+if(typeof w==="object"&&w!==null&&!!v.$isEK)J.uP($.eC.style,"auto")
+else{w=$.CF
+u=w.guc()
+t=w.Lt
+if(J.xZ(u,z)){if(typeof u!=="number")return H.s(u)
+t=J.LL(J.p0(t,z/u))}if(J.xZ(t,y)){w=this.zf
+v=$.eC
+if(w){J.uP(v.style,"0")
+t=y}else J.uP(v.style,"auto")}else J.uP($.eC.style,"0")
+J.OE($.eC.style,H.d(t)+"px")
+J.OE($.wu.style,H.d(t)+"px")}if(x.Y1.ci())J.uP($.eC.style,"auto")},
 $isQH:true},
 yd:{
 "":"aH;i6",
@@ -6280,7 +6291,7 @@ while(!0){u=z.gB(b)
 if(typeof u!=="number")return H.s(u)
 if(!(v<u))break
 u=z.t(b,v)
-t=new K.MQ(null,null,null,null,null,null,null)
+t=new K.MQ(null,null,null,null,null,null,null,null)
 t.Wr(y.a,u,z.gB(b),v,a)
 w.push(t)
 x.u(0,t.O3,t)
@@ -6289,7 +6300,7 @@ tx:{
 "":"Tp:14;a",
 call$1:function(a){J.pP(this.a.FL).h(0,"loaded")}},
 MQ:{
-"":"a;FL,vH>,J1,O3,oc>,u0,Xi",
+"":"a;FL,vH>,J1,O3,oc>,u0,Xi,KL",
 Wr:function(a,b,c,d,e){var z,y
 this.FL=b
 this.vH=a
@@ -6302,7 +6313,8 @@ this.oc=z.ax(z.XH,y)
 z=this.J1
 this.u0=z.hh(z.w0,y,c)
 y=J.P5(b)
-this.Xi=y.V5.MW.getAttribute("data-"+y.kZ("img"))}}}],["online_book_reader.properties","file:///Q:/GitHub/online-book-reader/web/app/properties.dart",,X,{
+this.Xi=y.V5.MW.getAttribute("data-"+y.kZ("img"))
+this.KL=b.getAttribute("data-"+new W.Sy(new W.i7(b)).kZ("scrolling"))==="true"}}}],["online_book_reader.properties","file:///Q:/GitHub/online-book-reader/web/app/properties.dart",,X,{
 "":"",
 B4:function(a){var z,y,x,w
 $.iC().x9("Reading properties from file: "+a)
