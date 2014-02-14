@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/css/penciltools-webfont.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=UnifrakturMaguntia" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia" type="text/css">
     
     <link rel="stylesheet" href="online_book_reader.css">
     <link rel="stylesheet" href="style.css">
@@ -26,7 +26,7 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
     
       ga('create', 'UA-47570432-1', 'regenbogenbart.ch');
       ga('send', 'pageview');
@@ -104,9 +104,65 @@
           <div data-type="page" data-img="pages/Strip23.jpg"></div>
           <div data-type="page" data-img="pages/Strip24.jpg"></div>
           
-          <!-- The end pages. --> 
-          <div data-type="end">
-            <p>DIES IST DAS VORLÄUFIGE ENDE... NÄCHSTEN FREITAG GEHT'S WEITER!</p>
+          <!-- The end page. --> 
+          <div data-type="end" class="end-page">
+          
+            <div class="end-page-inner container">
+          
+              <div class="row end-page-heading text-left">
+                <div class="col-xs-12">
+                  DIES IST DAS VORLÄUFIGE ENDE...<br>NÄCHSTEN FREITAG GEHT'S WEITER!
+                </div>
+              </div>
+              <div class="row end-page-info-text text-left">
+                <div class="col-xs-12">
+                  Falls Du 1x pro Woche über die Fortsetzung von König Regenbogenbart
+                  informiert bleiben willst, kannst Du Dich hier einschrieben:
+                </div>
+              </div>
+              
+              <div class="row end-page-arrow">
+                <div class="col-xs-11">
+                  <img src="../assets/images/arrow-bottom-left.png">
+                </div>
+              </div>
+              
+              <!-- MailChimp Signup Form -->
+              <div class="row end-page-subscribe-form">
+                <form class="form-inline" role="form" action="http://kingrainbowbeard.us3.list-manage2.com/subscribe/post?u=c4b452769c89c07ad1c5d9db9&amp;id=1556d7564f" method="post" novalidate>
+                  <div class="col-xs-6 end-page-subscribe-email-col">
+                    <label class="sr-only" for="signUpFormEmail">E-Mail Adresse</label>
+                    <input class="form-control end-page-subscribe-email" type="email" value="" placeholder="E-MAIL ADRESSE" name="EMAIL" id="signUpFormEmail">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c4b452769c89c07ad1c5d9db9_1556d7564f" value=""></div>
+                  </div>
+                  <div class="col-xs-6 end-page-subscribe-button-col">
+                    <button class="btn end-page-subscribe-button" type="submit" name="subscribe">INFORMIERE MICH!</button>
+                  </div>
+                </form>
+              </div>
+              <div class="row end-page-email-info">
+                <div class="col-xs-offset-6 col-xs-6">
+                  (E-Mail Adresse wird aus&shy;schliess&shy;lich
+                  verwendet, um über Neues im Leben von
+                  König Regen&shy;bogen&shy;bart zu in&shy;for&shy;mieren.)
+                  </div>
+              </div>
+              
+              <div class="row end-page-blog-text">
+                <div class="col-xs-12 text-left">
+                Und hier kommst Du zum Blog:
+                </div>
+              </div>
+              
+              <div class="row end-page-bubble-container">
+                <a class="blog-link" href="http://blog.regenbogenbart.ch">
+                  <span class="blog-bubble bubble-tail-top-left">Blog</span>
+                </a>
+              </div>
+              
+            </div>
+            
           </div>
           
         </div>
