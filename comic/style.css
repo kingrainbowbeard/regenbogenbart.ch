@@ -8,11 +8,79 @@ h6 {
   font-family: Penciltools, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.header-brand a {
+  font-family: "UnifrakturMaguntia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 42px;
+  color: #ff5992;
+}
+
 .spinner {
   background: url('../assets/images/spinner.gif') no-repeat;
   width: 26px;
   height: 26px;
 }
+ 
+.header,
+.footer,
+.fullscreen-toggle {
+  font-size: 16px;
+}
+
+/*
+ * --------------------
+ * Navigation
+ * --------------------
+ */
+.nav-icon-left {
+  padding-left: 28px;
+  position: relative;
+}
+
+.nav-icon-left:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.nav-icon-right {
+  padding-right: 28px;
+  position: relative;
+}
+
+.nav-icon-right:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.icon-home:before {
+  background: url('../assets/images/nav-home.png') no-repeat;
+}
+.icon-prev:before {
+  background: url('../assets/images/nav-prev.png') no-repeat;
+}
+.icon-next:before {
+  background: url('../assets/images/nav-next.png') no-repeat;
+}
+.icon-chapters:before {
+  background: url('../assets/images/nav-chapters.png') no-repeat;
+}
+.icon-back:before {
+  background: url('../assets/images/nav-back.png') no-repeat;
+}
+.icon-fullscreen-enter:before {
+  background: url('../assets/images/nav-fullscreen-enter.png') no-repeat;
+}
+.icon-fullscreen-exit:before {
+  background: url('../assets/images/nav-fullscreen-exit.png') no-repeat;
+}
+
 
 /* 
  * --------------------

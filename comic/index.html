@@ -13,7 +13,6 @@
       document.documentElement.className = 'fouc';
     </script>
     
-    <link rel="stylesheet" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/css/penciltools-webfont.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia" type="text/css">
     
@@ -39,8 +38,10 @@
     </div>
   
     <div id="root-container">
-      <a class="fullscreen-toggle-enter" href="#">VOLLBILD <i class="fa fa-arrows-alt"></i></a>
-      <a class="fullscreen-toggle-exit" href="#">EXIT VOLLBILD <i class="fa fa-compress"></i></a>
+      <div class="fullscreen-toggle">
+        <a class="fullscreen-toggle-enter nav-icon-right icon-fullscreen-enter" href="#">VOLLBILD</a>
+        <a class="fullscreen-toggle-exit nav-icon-right icon-fullscreen-exit" href="#">EXIT VOLLBILD</a>
+      </div>
     
       <div class="header">
         <div class="header-brand">
@@ -48,14 +49,14 @@
         </div>
         <ul class="header-nav">
           <li>
-            <a class="header-nav-home-small" href="http://www.regenbogenbart.ch">KR</a>
-            <a class="header-nav-home-large" href="http://www.regenbogenbart.ch"><i class="fa fa-home"></i> HOME</a>
+            <a class="header-nav-home-small nav-icon-left icon-home" href="http://www.regenbogenbart.ch">HOME</a>
+            <a class="header-nav-home-large nav-icon-left icon-home" href="http://www.regenbogenbart.ch">HOME</a>
           </li>
-          <li><a class="header-nav-previous" href="#"><i class="fa fa-chevron-left"></i> ZURÜCK</a></li>
-          <li><a class="header-nav-next" href="#">WEITER <i class="fa fa-chevron-right"></i></a></li>
+          <li><a class="header-nav-previous nav-icon-left icon-prev" href="#">ZURÜCK</a></li>
+          <li><a class="header-nav-next nav-icon-right icon-next" href="#">WEITER</a></li>
           <li>
-            <a class="header-nav-chapters-show" href="#">KAPITEL <i class="fa fa-list"></i></a>
-            <a class="header-nav-chapters-hide" href="#"><i class="fa fa-arrow-left"></i> ZURÜCK</a>
+            <a class="header-nav-chapters-show nav-icon-right icon-chapters" href="#">KAPITEL</a>
+            <a class="header-nav-chapters-hide nav-icon-left icon-back" href="#">ZURÜCK</a>
           </li>
         </ul>
       </div>
@@ -164,13 +165,13 @@
         
         <div class="navpanel-container navpanel-previous-container">
           <div class="navpanel navpanel-previous">
-            <a href="#">&lsaquo;</a>
+            <a class="navpanel-icon icon-prev-large" href="#"><img src="../assets/images/nav-prev-large.png" alt=""></a>
           </div>
         </div>
         
         <div class="navpanel-container navpanel-next-container">
           <div class="navpanel navpanel-next">
-            <a href="#">&rsaquo;</a>
+            <a class="navpanel-icon icon-next-large" href="#"><img src="../assets/images/nav-next-large.png" alt=""></a>
           </div>
         </div>
       </div>
