@@ -8,25 +8,22 @@ h6 {
   font-family: Penciltools, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.spinner {
+  background: url('../assets/images/spinner.gif') no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
 /* 
  * --------------------
  * The end page
  * --------------------
  */
-.end-page {
-  padding-top: 20px;
-  font-size: 18px;
+.end-page .html-content {
+  font-size: 32px;
   height: 100%;
-}
-
-.end-page-inner {
-  margin: auto;
-  max-width: 611px;
-}
-
-.end-page-heading,
-.end-page-info-text {
-  font-size: 18px;
+  padding-top: 60px;
+  text-align: center;
 }
 
 .end-page-info-text {
@@ -34,59 +31,83 @@ h6 {
 }
 
 .end-page-subscribe-form {
-  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 65%;
 }
 
-.end-page-subscribe-email-col, 
-.end-page-subscribe-button-col {
-  width: 50%;
-}
+.end-page-subscribe-email, 
+.end-page-subscribe-button {
+  display: block;
+  width: 100%;
+  height: 46px;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.33;
+  border-radius: 6px;
+  margin-bottom: 10px;
+} 
 
-
-.end-page-subscribe-email-col {
-  margin-bottom: 15px;
-  padding-right: 0.2em;
-}
-
-.end-page-subscribe-button-col {
-  padding-left: 0.2em;
-}
 
 .end-page-subscribe-email {
-  border-color: #ff5892;
-  font-size: 18px;
-  line-height: 1.33;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #ff5892;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 .end-page-subscribe-email:focus {
-  border-color: #ff23a2;rgb(255, 35, 162)
+  border-color: #f43a7b;
+  outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 88, 146, 0.6);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 88, 146, 0.6);
 }
 
 .end-page-subscribe-button {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
   color: #ffffff;
   background-color: #ff5892;
-  padding-top: 4px;
-  padding-bottom: 5px;
-  line-height: 1.33;
-  font-size: 18px;
-  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
 }
 
 .end-page-subscribe-button:hover,
 .end-page-subscribe-button:focus,
 .end-page-subscribe-button:active {
   color: #ffffff;
-  background-color: #ff23a2;
+  background-color: #f43a7b;
+  text-decoration: none;
 }
 
-.end-page-bubble-container {
-  position: relative;
+.end-page-subscribe-button:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.end-page-email-info {
+  margin: 10px auto 0 auto;
+  width: 77%;
+  font-size: 20px;
 }
 
 .end-page-blog-text {
+  margin-top: 40px;
+}
+
+.end-page-bubble-container {
   margin-top: 20px;
+  position: relative;
 }
 
 /* The blog bubble. */
@@ -97,19 +118,19 @@ h6 {
   left: 0px;
   bottom: 0; 
   right: 0;
-  width: 80px;
-  height: 56px;
-  line-height: 56px;
-  font-size: 24px;
+  width: 120px;
+  height: 84px;
+  line-height: 84px;
+  font-size: 36px;
   color: #fff;
   border-radius: 100%;
 }
 
 .blog-link:hover {
-  width: 90px;
-  height: 62px;
-  line-height: 62px;
-  font-size: 27px;
+  width: 135px;
+  height: 93px;
+  line-height: 93px;
+  font-size: 41px;
 }
 
 .blog-link:hover,
@@ -129,11 +150,11 @@ h6 {
 }
 
 a:hover .blog-bubble {
-  background-color: #ff23a2;
+  background-color: #f43a7b;
 }
 
 a:hover .blog-bubble:after {
-  border-color: transparent #ff23a2;
+  border-color: transparent #f43a7b;
 }
 
 
@@ -166,4 +187,18 @@ a:hover .blog-bubble:after {
   border-style: solid;
   border-color: transparent #ffffff;
   width: 0;
+}
+
+.end-page-footer {
+  margin-top: 180px;
+  font-size: 20px;
+}
+
+.end-page-footer a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.end-page-footer p {
+  margin: 0 0 10px 0;
 }

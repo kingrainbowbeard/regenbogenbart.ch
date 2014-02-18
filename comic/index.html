@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     
@@ -13,7 +13,6 @@
       document.documentElement.className = 'fouc';
     </script>
     
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" href="../assets/css/penciltools-webfont.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=UnifrakturMaguntia" type="text/css">
@@ -35,7 +34,7 @@
   
   <body>
     <div class="fouc-loader">
-      <i class="fa fa-spinner fa-spin fa-2x"></i>
+      <i class="spinner"></i>
       <p>Fast bereit...</p>
     </div>
   
@@ -110,63 +109,55 @@
           
           <!-- The end page. --> 
           <div data-type="end" data-scrolling="true" class="end-page">
-          
-            <div class="end-page-inner container">
-          
-              <div class="row end-page-heading text-left">
-                <div class="col-xs-12">
-                  DIES IST DAS VORLÄUFIGE ENDE...<br>NÄCHSTEN FREITAG GEHT'S WEITER!
-                </div>
+            
+            <div class="html-content">
+            
+              <div class="end-page-heading">
+                DIES IST DAS VORLÄUFIGE ENDE...<br>nächsten Freitag sollte es weiter gehen.
               </div>
-              <div class="row end-page-info-text text-left">
-                <div class="col-xs-12">
-                  Falls Du 1x pro Woche über die Fortsetzung von König Regenbogenbart
-                  informiert bleiben willst, kannst Du Dich hier einschrieben:
-                </div>
+              <div class="end-page-info-text">
+                Willst Du über die Fortsetzung informiert bleiben?
               </div>
               
-              <div class="row end-page-arrow">
-                <div class="col-xs-11">
-                  <img src="../assets/images/arrow-bottom-left.png">
-                </div>
+              <div class="end-page-arrow">
+                <img src="../assets/images/arrow-bottom-left.png">
               </div>
               
               <!-- MailChimp Signup Form -->
-              <div class="row end-page-subscribe-form">
-                <form class="form-inline" role="form" action="http://kingrainbowbeard.us3.list-manage2.com/subscribe/post?u=c4b452769c89c07ad1c5d9db9&amp;id=1556d7564f" method="post" novalidate>
-                  <div class="col-xs-6 end-page-subscribe-email-col">
-                    <label class="sr-only" for="signUpFormEmail">E-Mail Adresse</label>
-                    <input class="form-control end-page-subscribe-email" type="email" value="" placeholder="E-MAIL ADRESSE" name="EMAIL" id="signUpFormEmail">
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: 5000px;"><input type="text" name="b_c4b452769c89c07ad1c5d9db9_1556d7564f" value=""></div>
-                  </div>
-                  <div class="col-xs-6 end-page-subscribe-button-col">
-                    <button class="btn end-page-subscribe-button" type="submit" name="subscribe">INFORMIERE MICH!</button>
-                  </div>
+              <div class="end-page-subscribe-form">
+                <form action="http://kingrainbowbeard.us3.list-manage2.com/subscribe/post?u=c4b452769c89c07ad1c5d9db9&amp;id=1556d7564f" method="post" novalidate>
+                  <input class="form-control end-page-subscribe-email" type="email" value="" placeholder="E-MAIL ADRESSE" name="EMAIL" id="signUpFormEmail">
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: 5000px;"><input type="text" name="b_c4b452769c89c07ad1c5d9db9_1556d7564f" value=""></div>
+                  <button class="btn end-page-subscribe-button" type="submit" name="subscribe">INFORMIERE MICH!</button>
                 </form>
-              </div>
-              <div class="row end-page-email-info">
-                <div class="col-xs-offset-6 col-xs-6">
+                <div class="end-page-email-info">
                   (E-Mail Adresse wird aus&shy;schliess&shy;lich
                   verwendet, um über Neues im Leben von
                   König Regen&shy;bogen&shy;bart zu in&shy;for&shy;mieren.)
-                  </div>
-              </div>
-              
-              <div class="row end-page-blog-text">
-                <div class="col-xs-12 text-left">
-                Und hier kommst Du zum Blog:
                 </div>
               </div>
               
-              <div class="row end-page-bubble-container">
+              <div class="end-page-blog-text">
+                Und hier kommst Du zum Blog:
+              </div>
+              
+              <div class="end-page-bubble-container">
                 <a class="blog-link" href="http://blog.regenbogenbart.ch">
                   <span class="blog-bubble bubble-tail-top-left">Blog</span>
                 </a>
               </div>
               
+              <div class="end-page-footer">
+                <p>
+                  Copyright © 2014 <a href="http://www.matthiasleutwyler.ch">Matthias Leutwyler</a> • Alle Rechte vorbehalten.
+                </p>
+                <p>
+                  Website und <a href="https://github.com/marcojakob/online-book-reader">Online-Book-Reader </a> programmiert von <a href="http://edu.makery.ch/about/">Marco Jakob</a>.
+                </p>
+              </div>
+              
             </div>
-            
           </div>
           
         </div>
