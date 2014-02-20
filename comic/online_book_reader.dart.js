@@ -5412,7 +5412,8 @@ y=window.pageYOffset
 if(typeof y!=="number")return H.s(y)
 x=0-y
 z.a=300
-if(Math.abs(x)<300)z.a=Math.abs(x)+1
+if(x===0)return
+else if(Math.abs(x)<300)z.a=Math.abs(x)+1
 z.b=0
 z.c=0
 z.d=0
