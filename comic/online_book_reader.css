@@ -131,10 +131,17 @@ a.header-nav-chapters-hide {
   width: 100%;
   text-align: center;
 }
-.page-container > div img {
+.page-container .img-content {
+  visibility: hidden;
   max-width: 100%;
   max-height: 100%;
   z-index: 910;
+}
+.page-container .loaded .img-content {
+  visibility: visible;
+}
+.page-container .html-content {
+  z-index: 900;
 }
 .page-container .spinner {
   position: absolute;
@@ -145,7 +152,6 @@ a.header-nav-chapters-hide {
   left: 0;
   width: 2em;
   height: 2em;
-  z-index: 900;
 }
 .page-container .loaded .spinner {
   display: none;
