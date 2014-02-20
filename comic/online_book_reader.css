@@ -293,6 +293,9 @@ a:focus {
 a:active {
   opacity: 0.3;
 }
+img {
+  border: 0;
+}
 #root-container {
   margin: auto;
   position: absolute;
