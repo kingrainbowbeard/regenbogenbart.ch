@@ -1,15 +1,12 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-.fullscreen-toggle-enter,
-.fullscreen-toggle-exit {
+.fullscreen-toggle {
   position: fixed;
   top: 5px;
   right: 5px;
   z-index: 1020;
 }
-.small-screen .fullscreen-toggle-enter,
-.small-screen .fullscreen-toggle-exit,
-.show-chapters .fullscreen-toggle-enter,
-.show-chapters .fullscreen-toggle-exit {
+.small-screen .fullscreen-toggle,
+.show-chapters .fullscreen-toggle {
   display: none;
 }
 .show-navigation .fullscreen-toggle-exit {
@@ -72,11 +69,6 @@
 .small-screen .header-brand {
   display: none;
 }
-.small-screen a.header-nav-home-small {
-  font-family: "UnifrakturMaguntia", "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ff5992;
-  font-size: 2em;
-}
 .small-screen a.header-nav-home-large {
   display: none;
 }
@@ -84,22 +76,10 @@
 .large-screen .footer {
   text-align: center;
   margin: 0 auto;
-}
-.large-screen .header {
-  height: 80px;
-}
-.large-screen .footer {
-  height: 30px;
-  line-height: 30px;
+  overflow: hidden;
 }
 .large-screen.hide-navigation .header {
   display: none;
-}
-.large-screen .header-brand a {
-  font-family: "UnifrakturMaguntia", "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ff5992;
-  font-size: 3em;
-  white-space: nowrap;
 }
 .large-screen .header-nav-home,
 .large-screen .header-nav-next {
@@ -118,6 +98,9 @@
 }
 .large-screen .header-nav-home-small {
   display: none;
+}
+.header-brand {
+  white-space: nowrap;
 }
 a.header-nav-chapters-hide {
   display: none;
@@ -148,10 +131,17 @@ a.header-nav-chapters-hide {
   width: 100%;
   text-align: center;
 }
-.page-container > div img {
+.page-container .img-content {
+  visibility: hidden;
   max-width: 100%;
   max-height: 100%;
   z-index: 910;
+}
+.page-container .loaded .img-content {
+  visibility: visible;
+}
+.page-container .html-content {
+  z-index: 900;
 }
 .page-container .spinner {
   position: absolute;
@@ -162,7 +152,6 @@ a.header-nav-chapters-hide {
   left: 0;
   width: 2em;
   height: 2em;
-  z-index: 900;
 }
 .page-container .loaded .spinner {
   display: none;
@@ -267,7 +256,6 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   width: 100%;
   margin: 0;
@@ -282,7 +270,6 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Shadows Into Light Two", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -311,6 +298,9 @@ a:focus {
 }
 a:active {
   opacity: 0.3;
+}
+img {
+  border: 0;
 }
 #root-container {
   margin: auto;
